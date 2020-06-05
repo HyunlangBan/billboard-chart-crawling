@@ -36,7 +36,7 @@ csv_filename = "billboard.csv"
 
 csv_open = open(csv_filename, 'w+', encoding='UTF-8')
 csv_writer = csv.writer(csv_open)
-csv_writer.writerow(('Rank','Title','Singer', 'Image Link'))
+csv_writer.writerow(('Rank','Title','Artist', 'Image Link'))
 
 bs = BeautifulSoup(response, 'html.parser')
 
